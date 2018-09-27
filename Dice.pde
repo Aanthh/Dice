@@ -31,7 +31,7 @@ class Die //models one single dice cube
 	}
 	void roll()
 	{
-		r = 1;
+		r = (int)(Math.random()*6)+1;
 	}
 	void show()
 	{
@@ -41,6 +41,32 @@ class Die //models one single dice cube
 		fill(0, 0, 0);
 		if(r == 1){
 			ellipse(myX + 25, myY + 25, 10, 10);
+		}else if(r == 2){
+			ellipse(myX + 13, myY + 25, 10, 10);
+			ellipse(myX + 37, myY + 25, 10, 10);
+		}else if(r == 3){
+			ellipse(myX + 11.5, myY + 11.5, 10, 10);
+			ellipse(myX + 25, myY + 25, 10, 10);
+			ellipse(myX + 39.5, myY + 39.5, 10, 10);
+		}else if(r == 4){
+			ellipse(myX + 13, myY + 13, 10, 10);
+			ellipse(myX + 37, myY + 13, 10, 10);
+			ellipse(myX + 13, myY + 37, 10, 10);
+			ellipse(myX + 37, myY + 37, 10, 10);
+		}else if(r == 5){
+			ellipse(myX + 13, myY + 13, 10, 10);
+			ellipse(myX + 37, myY + 13, 10, 10);
+			ellipse(myX + 13, myY + 37, 10, 10);
+			ellipse(myX + 37, myY + 37, 10, 10);
+			ellipse(myX + 25, myY + 25, 10, 10);
+		}else if(r == 6){
+			ellipse(myX + 13, myY + 11.5, 10, 10);
+			ellipse(myX + 13, myY + 25, 10, 10);
+			ellipse(myX + 13, myY + 39.5, 10, 10);
+			ellipse(myX + 37, myY + 11, 10, 10);
+			ellipse(myX + 37, myY + 25, 10, 10);
+			ellipse(myX + 37, myY + 39.5, 10, 10);
 		}
 	}
 }
+
