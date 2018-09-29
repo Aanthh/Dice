@@ -38,7 +38,7 @@ class Die //models one single dice cube
   }
   void show()
   {
-    fill((int)(Math.random()*256),(int)(Math.random()*256),(int)(Math.random()*256));
+    fill(255);
     rect(myX, myY, 50, 50);
     System.out.println(r);
     fill(0, 0, 0);
@@ -78,3 +78,4 @@ class Die //models one single dice cube
     }
   }
 }
+
