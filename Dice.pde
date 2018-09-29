@@ -2,19 +2,19 @@ int count;
 void setup()
 {
   background(255);
-  size(292, 288);
+  size(600, 600);
   noLoop();
 }
 void draw()
 {
   background(255);
-  for(int y = 0; y <= 273; y += 55){
-    for(int x = 10; x <= 280; x += 55){
+  for(int y = 0; y <= 543; y += 55){
+    for(int x = 10; x <= 555; x += 55){
       Die bob = new Die(x, y);
       bob.show();
     }
   }
-  text("Number of dots: " + count, 96, 283);
+  text("Number of dots: " + count, 246, 583);
   count = 0;
 }
 void mousePressed()
