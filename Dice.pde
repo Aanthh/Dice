@@ -30,6 +30,7 @@ class Die //models one single dice cube
     myX = x;
     myY = y;
     roll();
+
   }
   void roll()
   {
