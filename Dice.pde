@@ -36,10 +36,10 @@ class Die
   }
   void show()
   {
-    fill(255);
+    fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
     rect(myX, myY, 50, 50);
     System.out.println(r);
-    fill(0, 0, 0);
+    fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
     if(r == 1){
       ellipse(myX + 25, myY + 25, 10, 10);
       count = count + 1;
