@@ -25,12 +25,11 @@ class Die //models one single dice cube
 {
   int numDots, myX, myY, r;
   
-  Die(int x, int y) //constructor
+  Die(int x, int y)
   {
     myX = x;
     myY = y;
     roll();
-
   }
   void roll()
   {
@@ -78,4 +77,3 @@ class Die //models one single dice cube
     }
   }
 }
-
