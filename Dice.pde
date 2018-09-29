@@ -21,16 +21,14 @@ void mousePressed()
 {
   redraw();
 }
-class Die //models one single dice cube
+class Die
 {
   int numDots, myX, myY, r;
-  
   Die(int x, int y)
   {
     myX = x;
     myY = y;
     roll();
-
   }
   void roll()
   {
