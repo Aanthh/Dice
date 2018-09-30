@@ -2,19 +2,19 @@ int count;
 void setup()
 {
   background(255);
-  size(600, 600);
+  size(292, 288);
   noLoop();
 }
 void draw()
 {
   background(255);
-  for(int y = 0; y <= 543; y += 55){
-    for(int x = 10; x <= 555; x += 55){
+  for(int y = 0; y <= 273; y += 55){
+    for(int x = 10; x <= 280; x += 55){
       Die bob = new Die(x, y);
       bob.show();
     }
   }
-  text("Number of dots: " + count, 246, 583);
+  text("Number of dots: " + count, 96, 283);
   count = 0;
 }
 void mousePressed()
@@ -36,10 +36,10 @@ class Die
   }
   void show()
   {
-    fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
+    fill(255);
     rect(myX, myY, 50, 50);
     System.out.println(r);
-    fill((int)(Math.random()*256), (int)(Math.random()*256), (int)(Math.random()*256));
+    fill(0, 0, 0);
     if(r == 1){
       ellipse(myX + 25, myY + 25, 10, 10);
       count = count + 1;
