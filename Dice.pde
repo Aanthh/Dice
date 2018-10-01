@@ -38,7 +38,6 @@ class Die
   {
     fill(255);
     rect(myX, myY, 50, 50);
-    System.out.println(r);
     fill(0, 0, 0);
     if(r == 1){
       ellipse(myX + 25, myY + 25, 10, 10);
